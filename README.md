@@ -45,7 +45,7 @@ cd to memcached-operator folder first.
 
         $ make undeploy
 
-        ./kubernetes-operator/memcached-operator/bin/kustomize build config/default | kubectl delete --ignore-not-found=false -f -
+        .../kubernetes-operator/memcached-operator/bin/kustomize build config/default | kubectl delete --ignore-not-found=false -f -
         namespace "memcached-operator-system" deleted
         customresourcedefinition.apiextensions.k8s.io "memcacheds.cache.weiwongfaye" deleted
         serviceaccount "memcached-operator-controller-manager" deleted
